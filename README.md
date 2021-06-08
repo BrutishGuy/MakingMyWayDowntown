@@ -27,7 +27,7 @@ export HADOOP_CONF_DIR=/localhost/NoCsBack/bdap/clustera
 To run the code associated with Exercise 1, specifically the Trip Length Distribution, please run: 
 
 ```shell
-python3 ./Exercise1/exercise1.py`
+python3 ./Exercise1/exercise1.py
 ```
 
 The environment variables there have already been set to defaults for the virtual machines on the cluster, but optional parameters are specified. Please edit the file to adjust these to any local machine you are using.
@@ -39,7 +39,7 @@ This Spark aspect was done in Python, including using PySpark, as there was no r
 Run the below command (example usage shown below as well) to calculate the total revenue as well as output files for the trip revenue distribution
 
 ```shell
-hadoop jar Exercise2.jar Assignment3.AirportRideRevenueMain <PATH_TO_INPUT_FILE> <PATH_TO_OUTPUT_FILE> <NO_OF_REDUCERS_STAGE_1> <NO_OF_REDUCERS_STAGE_2> <CONSIDER_OVERLAPPING_SEGMENTS?:true|false> <RECONSTRUCT_AIRPORT_TRIPS_ONLY?:true|false>`
+hadoop jar Exercise2.jar Assignment3.AirportRideRevenueMain <PATH_TO_INPUT_FILE> <PATH_TO_OUTPUT_FILE> <NO_OF_REDUCERS_STAGE_1> <NO_OF_REDUCERS_STAGE_2> <CONSIDER_OVERLAPPING_SEGMENTS?:true|false> <RECONSTRUCT_AIRPORT_TRIPS_ONLY?:true|false>
 ```
 
 Example usage:
@@ -47,5 +47,5 @@ Example usage:
 After you have extracted the file all.segments in a data folder you create in the home folder of the repository, you can run this via:
 
 ```shell
-hadoop jar Exercise2.jar Assignment3.AirportRideRevenueMain /data/all.segments /user/r0605648/output 9 1 true true`
+hadoop jar Exercise2.jar Assignment3.AirportRideRevenueMain /data/all.segments /user/r0781168/output 9 1 true true
 ```
