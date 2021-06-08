@@ -10,7 +10,7 @@
   <packaging>pom</packaging>
   
   <modules>
-		<module>Excercise2</module>
+		<module>Exercise2</module>
   </modules>
 	
 </project>
