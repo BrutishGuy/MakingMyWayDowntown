@@ -10,7 +10,6 @@ import findspark
 
 #spark_location = "C:\\Users\\VictorGueorguiev\\Documents\\Spark\\spark-2.4.5-bin-hadoop2.7"
 #os.environ['JAVA_HOME'] = "C:\\Program Files\\Java\\jdk1.8.0_161"
-findspark.init(spark_location)
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql import SQLContext
@@ -80,6 +79,7 @@ do_plotting = opt.do_plotting
 #spark = SparkSession.builder.getOrCreate()
 #df = spark.sql("select 'spark' as hello ")
 #df.show()
+findspark.init(spark_location)
 
 conf = pyspark.SparkConf()
 # conf.set('spark.app.name', app_name) # Optional configurations
